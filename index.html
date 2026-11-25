@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CGPA Calculator Bangladesh (2026) — Free &amp; Accurate University GPA Tool | SP Calculator</title>
+<meta name="description" content="Free CGPA calculator for Bangladesh university students. Calculate semester GPA and overall CGPA on the standard 4.00 scale, plus NSU, BRAC, UIU and AIUB grading systems. Add semesters and courses, get instant results.">
+<meta name="keywords" content="CGPA Calculator Bangladesh, CGPA calculator, GPA calculator Bangladesh, NSU CGPA, BRAC CGPA, AIUB CGPA, UIU CGPA, university CGPA, semester GPA calculator">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CGPA Calculator Bangladesh (2026) — Free & Accurate University GPA Tool">
+<meta property="og:description" content="Calculate semester GPA and overall CGPA for Bangladesh universities — Standard 4.00 scale, NSU, BRAC, UIU and AIUB. Free, instant, no sign-up.">
+<meta name="theme-color" content="#2563eb">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebApplication",
+      "name": "CGPA Calculator Bangladesh",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Any",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BDT" },
+      "description": "Free CGPA calculator for Bangladesh university students. Semester GPA and overall CGPA on the standard 4.00 scale and NSU, BRAC, UIU and AIUB grading systems."
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What is CGPA?", "acceptedAnswer": { "@type": "Answer", "text": "CGPA (Cumulative Grade Point Average) is the weighted average of the grade points you earned across all your semesters, weighted by the credit hours of each course." } },
+        { "@type": "Question", "name": "How is CGPA calculated?", "acceptedAnswer": { "@type": "Answer", "text": "Multiply each course grade point by its credit hours, add those values together, then divide by the total credit hours. CGPA = total grade points earned divided by total credit hours." } },
+        { "@type": "Question", "name": "Can I calculate CGPA for multiple semesters?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Add one semester card per semester, add its courses, and the calculator shows each semester GPA separately along with your overall cumulative CGPA." } },
+        { "@type": "Question", "name": "Does this calculator support NSU, BRAC, UIU and AIUB?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Choose your university grading system at the top of the calculator. The grade options in every course change to that university scale. If your university is not listed, use the Standard Scale." } },
+        { "@type": "Question", "name": "Does this calculator support retake or improvement courses?", "acceptedAnswer": { "@type": "Answer", "text": "No. Retakes and improvements are not included. Results are based on the standard course grades and credit hours you enter." } },
+        { "@type": "Question", "name": "What is a good CGPA in Bangladesh?", "acceptedAnswer": { "@type": "Answer", "text": "A CGPA above 3.50 is generally considered very good in most Bangladeshi universities, and 3.75 or above is considered excellent. Scholarship and job requirements vary by institution." } }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+:root{
+  --bg:#F4F5FF; --card:#ffffff; --ink:#1e293b; --muted:#64748b; --line:#e2e8f0;
+  --blue:#2563eb; --cyan:#06b6d4; --violet:#8b5cf6; --navy:#0f2040; --green:#16a34a;
+  --amber-bg:#fef9c3; --amber-ink:#854d0e; --blue-bg:#dbeafe;
+  --radius:18px; --shadow:0 10px 30px rgba(37,99,235,.10);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;padding-bottom:92px}
+h1,h2,h3{font-family:"Plus Jakarta Sans",Inter,sans-serif;line-height:1.25;margin:0 0 .6rem}
+h1{font-size:clamp(1.7rem,4.5vw,2.6rem);font-weight:800}
+h2{font-size:clamp(1.25rem,3vw,1.6rem);font-weight:800;margin-top:2.5rem}
+h3{font-size:1.05rem;font-weight:700}
+p{margin:.4rem 0 .9rem}
+a{color:var(--blue)}
+.wrap{max-width:880px;margin:0 auto;padding:0 16px}
+.topbar{background:var(--navy);color:#fff;position:sticky;top:0;z-index:20}
+.topbar .wrap{display:flex;align-items:center;gap:18px;height:56px}
+.brand{font-family:"Plus Jakarta Sans",sans-serif;font-weight:800;font-size:1.15rem;color:#fff;text-decoration:none}
+.brand span{color:#7dd3fc}
+.topbar nav{margin-left:auto;display:flex;gap:16px}
+.topbar nav a{color:#cbd5e1;text-decoration:none;font-size:.92rem;font-weight:600}
+.topbar nav a:hover{color:#fff}
+.hero{text-align:center;padding:44px 16px 8px}
+.hero p{color:var(--muted);max-width:640px;margin:.5rem auto 0;font-size:1.05rem}
+.eyebrow{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 14px;font-size:.8rem;font-weight:700;color:var(--blue);letter-spacing:.02em}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px;margin-top:20px}
+.grade-card{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between}
+.pill{display:inline-block;background:#dcfce7;color:#166534;border-radius:999px;padding:4px 12px;font-size:.82rem;font-weight:700}
+.grade-card .sub{color:var(--muted);font-size:.9rem}
+.btn{font:inherit;font-weight:700;border-radius:12px;padding:11px 18px;cursor:pointer;min-height:44px;border:1px solid transparent}
+.btn-primary{background:linear-gradient(135deg,var(--blue),var(--violet));color:#fff}
+.btn-ghost{background:#fff;border-color:var(--line);color:var(--blue)}
+.btn-ghost:hover{border-color:var(--blue)}
+.btn-outline-dashed{background:#fff;border:1.5px dashed #94a3b8;color:var(--ink);width:100%}
+.btn-block{width:100%}
+.scale-picker{margin-top:14px;border-top:1px solid var(--line);padding-top:14px}
+.scale-picker p{font-weight:700;margin:0 0 10px}
+.scale-btns{display:flex;flex-wrap:wrap;gap:10px}
+.scale-btn{font:inherit;font-weight:700;padding:10px 18px;min-height:44px;border-radius:999px;border:1.5px solid var(--line);background:#fff;cursor:pointer}
+.scale-btn[aria-pressed="true"]{background:var(--violet);border-color:var(--violet);color:#fff}
+.semester{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;margin-top:20px;background:#fff;box-shadow:var(--shadow)}
+.semester header{background:var(--navy);color:#fff;display:flex;align-items:center;gap:10px;padding:12px 16px;flex-wrap:wrap}
+.semester header h2{margin:0;font-size:1.05rem;color:#fff}
+.semester header .gpa{margin-left:auto;font-weight:800}
+.remove-sem{background:none;border:0;color:#fca5a5;font:inherit;font-weight:700;cursor:pointer;padding:8px;min-height:44px}
+.course{display:grid;grid-template-columns:1fr 110px 1fr 44px;gap:10px;padding:14px 16px;border-top:1px solid var(--line);align-items:end}
+.course:first-of-type{border-top:0}
+.field label{display:block;font-size:.72rem;font-weight:700;letter-spacing:.05em;color:var(--muted);margin-bottom:5px}
+.field input,.field select{width:100%;font:inherit;padding:10px 12px;border:1.5px solid var(--line);border-radius:10px;min-height:44px;background:#fff;color:var(--ink)}
+.field input:focus,.field select:focus{outline:3px solid rgba(37,99,235,.35);border-color:var(--blue)}
+.remove-course{background:none;border:0;color:#dc2626;font-size:1.25rem;cursor:pointer;min-height:44px;min-width:44px}
+.add-course{padding:0 16px 16px}
+.note{background:var(--amber-bg);color:var(--amber-ink);border-radius:12px;padding:12px 16px;margin-top:20px;font-size:.92rem}
+.banner{background:var(--blue-bg);border-radius:12px;padding:14px 16px;margin-top:20px}
+.banner b{display:block}
+table{width:100%;border-collapse:collapse;margin-top:10px;font-size:.95rem}
+th,td{border-bottom:1px solid var(--line);padding:9px 8px;text-align:left}
+th{font-size:.75rem;letter-spacing:.05em;color:var(--muted)}
+.bar{display:inline-block;height:8px;border-radius:99px;vertical-align:middle;margin-right:8px}
+.steps{counter-reset:step;list-style:none;padding:0}
+.steps li{counter-increment:step;padding:10px 0 10px 52px;position:relative;border-bottom:1px solid var(--line)}
+.steps li::before{content:counter(step);position:absolute;left:0;top:10px;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--blue),var(--cyan));color:#fff;display:grid;place-items:center;font-weight:800}
+.related{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:12px}
+.related a{display:block;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;text-decoration:none;color:var(--ink);box-shadow:var(--shadow)}
+.related a b{color:var(--blue)}
+.related a span{display:block;color:var(--muted);font-size:.9rem;margin-top:4px}
+details{border:1px solid var(--line);border-radius:12px;background:#fff;padding:12px 16px;margin-top:10px}
+summary{cursor:pointer;font-weight:700;min-height:44px;display:flex;align-items:center}
+details p{margin:.6rem 0 0;color:var(--muted)}
+.sticky-bar{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -6px 24px rgba(15,32,64,.12);z-index:30}
+.sticky-bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px}
+.sticky-bar .total{font-weight:700;color:var(--muted);font-size:.9rem}
+.sticky-bar .total b{color:var(--ink);font-size:1.05rem}
+.sticky-bar .final{font-weight:800;color:var(--violet);font-size:clamp(1.4rem,5vw,2rem);line-height:1}
+.sticky-bar .final small{display:block;font-size:.68rem;color:var(--muted);letter-spacing:.06em}
+footer{color:var(--muted);font-size:.85rem;text-align:center;padding:28px 16px 8px}
+.target-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px}
+.target-result{margin-top:12px;font-weight:800;font-size:1.1rem}
+@media (max-width:640px){
+  .course{grid-template-columns:1fr 96px;grid-template-areas:"name name" "credit grade" "remove remove"}
+  .course .f-name{grid-area:name}.course .f-credit{grid-area:credit}.course .f-grade{grid-area:grade}.course .remove-course{grid-area:remove;justify-self:end}
+  .related,.target-grid{grid-template-columns:1fr}
+  .topbar nav a:not(:first-child){display:none}
+}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="wrap">
+  <a class="brand" href="#">SP <span>Calculator</span></a>
+  <nav><a href="#">Home</a><a href="#calculator">CGPA Calculator</a><a href="#grading">Grading System</a><a href="#faq">FAQ</a></nav>
+</div></header>
+<main class="wrap">
+  <section class="hero">
+    <span class="eyebrow">FREE &middot; NO SIGN-UP &middot; INSTANT RESULT</span>
+    <h1>CGPA Calculator for Bangladesh University Students</h1>
+    <p>Calculate your CGPA using the standard 4.00 grading system followed by most universities in Bangladesh &mdash; with NSU, BRAC, UIU and AIUB scales built in.</p>
+  </section>
+
+  <section id="calculator" aria-label="CGPA calculator">
+    <div class="card grade-card">
+      <div>
+        <span class="pill">&#10003; <span id="scaleName">Standard 4.00 Scale</span></span>
+        <div class="sub" id="scaleNote">Used by most universities in Bangladesh.</div>
+      </div>
+      <button class="btn btn-ghost" type="button" id="toggleScales" aria-expanded="false">Change grading system &rarr;</button>
+      <div class="scale-picker" id="scalePicker" hidden>
+        <p>Select your university&rsquo;s grading system:</p>
+        <div class="scale-btns" role="group" aria-label="Grading system">
+          <button type="button" class="scale-btn" data-scale="standard" aria-pressed="true">Standard Scale</button>
+          <button type="button" class="scale-btn" data-scale="nsu" aria-pressed="false">NSU</button>
+          <button type="button" class="scale-btn" data-scale="brac" aria-pressed="false">BRAC</button>
+          <button type="button" class="scale-btn" data-scale="uiu" aria-pressed="false">UIU</button>
+          <button type="button" class="scale-btn" data-scale="aiub" aria-pressed="false">AIUB</button>
+        </div>
+        <p class="sub" style="color:var(--muted);font-size:.85rem;margin-top:10px">Scales are shown as commonly published for each university. Grading rules can change &mdash; always confirm with your university&rsquo;s official policy before using a result for anything official.</p>
+      </div>
+    </div>
+
+    <div id="semesters"></div>
+
+    <div style="margin-top:16px">
+      <button class="btn btn-primary btn-block" type="button" id="addSemester">+ Add Next Semester</button>
+    </div>
+
+    <div class="banner"><b>NEW &mdash; Want to know what grades you need next semester?</b>
+      Try the Target CGPA Calculator below &mdash; enter your current CGPA and your goal, and it tells you the average grade point you still need.
+    </div>
+
+    <div class="note"><b>Note:</b> This CGPA calculator uses the commonly followed 4.00 grading system in Bangladesh. Special cases such as retakes or improvements are not included.</div>
+  </section>
+
+  <section class="card" id="target" aria-label="Target CGPA calculator">
+    <h2 style="margin-top:0">Target CGPA Calculator</h2>
+    <p style="color:var(--muted)">What average grade point do you need in your remaining semesters to reach your goal CGPA?</p>
+    <div class="target-grid">
+      <div class="field"><label for="tCurrent">CURRENT CGPA</label><input id="tCurrent" type="number" min="0" max="4" step="0.01" value="3.00"></div>
+      <div class="field"><label for="tDone">COMPLETED CREDITS</label><input id="tDone" type="number" min="1" step="1" value="60"></div>
+      <div class="field"><label for="tGoal">TARGET CGPA</label><input id="tGoal" type="number" min="0" max="4" step="0.01" value="3.50"></div>
+      <div class="field"><label for="tLeft">REMAINING CREDITS</label><input id="tLeft" type="number" min="1" step="1" value="60"></div>
+    </div>
+    <p class="target-result" id="targetResult" aria-live="polite"></p>
+    <p style="color:var(--muted);font-size:.9rem">Formula: required average = (target CGPA &times; total credits &minus; current CGPA &times; completed credits) &divide; remaining credits.</p>
+  </section>
+
+  <section>
+    <h2>How to Calculate CGPA in Bangladesh Universities</h2>
+    <p>CGPA (Cumulative Grade Point Average) is how most universities in Bangladesh measure overall academic performance. Each course contributes in proportion to its credit hours: a 3-credit course counts three times as much as a 1-credit course. To find your CGPA, multiply the grade point of each course by its credit hours, add all of those values together, and divide by your total credit hours.</p>
+    <p>This calculator does that arithmetic for you, semester by semester, on the standard 4.00 grading system used by most universities in Bangladesh &mdash; or on the NSU, BRAC, UIU or AIUB scale if you select one.</p>
+
+    <h2>How to Use the CGPA Calculator</h2>
+    <ol class="steps">
+      <li><b>Add your semester</b> &mdash; start with Semester 1, then add more semesters with the button below the calculator.</li>
+      <li><b>Enter each course credit</b> &mdash; type the credit hours for every course (usually 3). Add or remove courses as needed.</li>
+      <li><b>Select the grade you received</b> &mdash; pick the letter grade for each course. You can also type an optional course name, like CSE101.</li>
+      <li><b>Your GPA &amp; CGPA are calculated automatically</b> &mdash; there is no Calculate button. Each semester GPA shows in its header, and your final CGPA stays visible in the bar at the bottom of the screen.</li>
+    </ol>
+
+    <h2>Related Academic Calculators</h2>
+    <div class="related">
+      <a href="https://sp-calculator-ten.vercel.app/ssc-gpa-calculator"><b>SSC GPA Calculator &rarr;</b><span>Calculate your SSC GPA instantly using the Bangladesh grading system for SSC.</span></a>
+      <a href="https://sp-calculator-ten.vercel.app/target-cgpa-calculator"><b>Target CGPA Calculator &rarr;</b><span>Determine the GPA required in your remaining semesters to achieve your goal graduation CGPA.</span></a>
+    </div>
+
+    <h2 id="grading">CGPA Grading System in Bangladesh</h2>
+    <p>Most universities in Bangladesh follow a 4.00 CGPA scale. Here is the commonly used grading structure:</p>
+    <table>
+      <thead><tr><th>LETTER GRADE</th><th>GRADE POINT</th><th>MARKS (%)</th><th></th></tr></thead>
+      <tbody id="gradeTable"></tbody>
+    </table>
+    <p style="color:var(--muted);font-size:.9rem">The table above is the Standard Scale. Choose NSU, BRAC, UIU or AIUB at the top of the calculator to see that university&rsquo;s grade options in the course dropdowns.</p>
+
+    <h2>Example of CGPA Calculation</h2>
+    <p>Here is a simple example of how CGPA is calculated:</p>
+    <table>
+      <thead><tr><th>COURSE</th><th>CREDIT</th><th>GRADE POINT</th><th>TOTAL</th></tr></thead>
+      <tbody>
+        <tr><td>Course 1 &mdash; A+ (4.00)</td><td>3</td><td>4.00</td><td>12.00</td></tr>
+        <tr><td>Course 2 &mdash; B+ (3.25)</td><td>3</td><td>3.25</td><td>9.75</td></tr>
+        <tr><td>Course 3 &mdash; A&minus; (3.50)</td><td>2</td><td>3.50</td><td>7.00</td></tr>
+        <tr><td><b>Total</b></td><td><b>8</b></td><td></td><td><b>28.75</b></td></tr>
+      </tbody>
+    </table>
+    <p><b>Final CGPA = 28.75 &divide; 8 = 3.59</b></p>
+
+    <h2>Supported University Grading Systems</h2>
+    <p>This CGPA calculator supports both the commonly used Bangladesh Standard Scale and selected university-specific grading systems. If your university follows a different grading structure, select your university before calculating.</p>
+    <ul>
+      <li><b>Standard Scale</b> &mdash; most universities in Bangladesh</li>
+      <li><b>North South University (NSU)</b> &mdash; no A+, top grade A (4.00) from 93 marks</li>
+      <li><b>BRAC University</b> &mdash; A+ and A both carry 4.00, with a 13-step scale down to D&minus;</li>
+      <li><b>American International University&ndash;Bangladesh (AIUB)</b> &mdash; 9-step scale, no A&minus; or B&minus;</li>
+      <li><b>United International University (UIU)</b> &mdash; A+ from 90 marks, D at 1.75</li>
+    </ul>
+    <p>If your university is not listed, use the Standard Scale unless your institution officially follows a different grading policy.</p>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+    <details><summary>1. What is CGPA?</summary><p>CGPA (Cumulative Grade Point Average) is a measure of your overall academic performance across multiple semesters. It is the credit-weighted average of all the grade points you have earned.</p></details>
+    <details><summary>2. How is CGPA calculated?</summary><p>CGPA = total grade points earned &divide; total credit hours. Each course&rsquo;s grade point is multiplied by its credit hours first, so higher-credit courses affect the result more.</p></details>
+    <details><summary>3. Is this CGPA calculator accurate?</summary><p>Yes, for the scale you select. It follows the standard 4.00 grading system commonly used in Bangladesh universities, and the NSU, BRAC, UIU and AIUB scales as commonly published. The result is only as accurate as the grades and credits you enter &mdash; double-check them against your transcript.</p></details>
+    <details><summary>4. Can I calculate CGPA for multiple semesters?</summary><p>Yes. Add a semester card for each semester and enter its courses. The calculator shows each semester GPA separately and your cumulative CGPA in the bottom bar.</p></details>
+    <details><summary>5. What grading scale does this calculator use?</summary><p>By default, the Bangladesh Standard Scale (A+ = 4.00, A = 3.75, A&minus; = 3.50, B+ = 3.25, B = 3.00, and so on). You can switch to NSU, BRAC, UIU or AIUB from the grading-system card.</p></details>
+    <details><summary>6. Can I calculate semester GPA separately?</summary><p>Yes. The calculator automatically shows the GPA for each semester in that semester&rsquo;s header, alongside your overall cumulative CGPA.</p></details>
+    <details><summary>7. Does this calculator support retake or improvement courses?</summary><p>No. Retake and improvement calculations are not included. Results are based on the standard course grades and credit hours you enter.</p></details>
+    <details><summary>8. What is a good CGPA in Bangladesh?</summary><p>A CGPA above 3.50 is generally considered very good in most Bangladeshi universities, while a CGPA of 3.75 or above is considered excellent.</p></details>
+    <details><summary>9. How much CGPA is required for scholarships?</summary><p>Scholarship requirements vary by university and program. Many scholarships ask for a CGPA between 3.50 and 4.00 &mdash; check the specific scholarship&rsquo;s official requirements.</p></details>
+    <details><summary>10. Can I use this calculator on mobile?</summary><p>Yes. The calculator is fully responsive and works on mobile phones, tablets and desktop devices. Your entries are saved in your browser, so a refresh keeps them.</p></details>
+    <details><summary>11. Does this calculator support NSU CGPA calculation?</summary><p>Yes. Select NSU before entering your courses and the calculator applies the NSU grading scale, where the top grade is A (4.00) from 93 marks and there is no A+.</p></details>
+    <details><summary>12. How do I calculate CGPA for BRAC University?</summary><p>Select BRAC University from the university selector before entering course grades and credits. The calculator automatically applies BRAC&rsquo;s grading scale.</p></details>
+    <details><summary>13. Can I calculate CGPA for AIUB?</summary><p>Yes. Select AIUB and calculate semester GPA and cumulative CGPA using its grading structure &mdash; A+ (4.00) from 90 marks, with no A&minus; or B&minus; grade.</p></details>
+    <details><summary>14. Can UIU students use this CGPA calculator?</summary><p>Yes. Select United International University (UIU) to calculate GPA and CGPA using UIU&rsquo;s grading scale, where A+ starts at 90 marks.</p></details>
+  </section>
+</main>
+<div class="sticky-bar" role="status" aria-live="polite"><div class="wrap">
+  <div class="total">TOTAL CREDIT: <b id="totalCredits">9.0</b></div>
+  <div class="final"><small>FINAL CGPA</small><span id="finalCgpa">4.00</span></div>
+</div></div>
+<footer>SP Calculator &mdash; CGPA Calculator Bangladesh. Results are estimates based on the grades and credits you enter; confirm official results with your university.</footer>
+
+<script>
+const SCALES = {
+  standard: { name: 'Standard 4.00 Scale', note: 'Used by most universities in Bangladesh.', grades: [
+    ['A+','4.00','80-100'],['A','3.75','75-79'],['A-','3.50','70-74'],['B+','3.25','65-69'],['B','3.00','60-64'],
+    ['B-','2.75','55-59'],['C+','2.50','50-54'],['C','2.25','45-49'],['D','2.00','40-44'],['F','0.00','0-39']]},
+  nsu: { name: 'NSU Scale', note: 'North South University — top grade A (4.00), no A+.', grades: [
+    ['A','4.00','93-100'],['A-','3.70','90-92'],['B+','3.30','87-89'],['B','3.00','83-86'],['B-','2.70','80-82'],
+    ['C+','2.30','77-79'],['C','2.00','73-76'],['C-','1.70','70-72'],['D+','1.30','67-69'],['D','1.00','60-66'],['F','0.00','0-59']]},
+  brac: { name: 'BRAC Scale', note: 'BRAC University — A+ and A both carry 4.00.', grades: [
+    ['A+','4.00','97-100'],['A','4.00','90-96'],['A-','3.70','85-89'],['B+','3.30','80-84'],['B','3.00','75-79'],
+    ['B-','2.70','70-74'],['C+','2.30','65-69'],['C','2.00','60-64'],['C-','1.70','57-59'],['D+','1.30','55-56'],
+    ['D','1.00','52-54'],['D-','0.70','50-51'],['F','0.00','0-49']]},
+  uiu: { name: 'UIU Scale', note: 'United International University — A+ from 90 marks.', grades: [
+    ['A+','4.00','90-100'],['A','3.75','86-89'],['A-','3.50','82-85'],['B+','3.25','78-81'],['B','3.00','74-77'],
+    ['B-','2.75','70-73'],['C+','2.50','66-69'],['C','2.25','62-65'],['C-','2.00','58-61'],['D','1.75','55-57'],['F','0.00','0-54']]},
+  aiub: { name: 'AIUB Scale', note: 'American International University–Bangladesh — no A- or B- grade.', grades: [
+    ['A+','4.00','90-100'],['A','3.75','85-89'],['B+','3.50','80-84'],['B','3.25','75-79'],['C+','3.00','70-74'],
+    ['C','2.75','65-69'],['D+','2.50','60-64'],['D','2.25','50-59'],['F','0.00','0-49']]}
+};
+const BAR_COLORS = ['#16a34a','#22c55e','#84cc16','#eab308','#f59e0b','#f97316','#ef4444','#dc2626','#991b1b','#7f1d1d','#991b1b','#dc2626','#ef4444'];
+let scale = 'standard';
+let semesters = [{ courses: [{name:'',credit:3,grade:0},{name:'',credit:3,grade:0},{name:'',credit:3,grade:0}] }];
+try {
+  const saved = JSON.parse(localStorage.getItem('sp-cgpa-v1') || 'null');
+  if (saved && Array.isArray(saved.semesters) && saved.semesters.length) { semesters = saved.semesters; scale = SCALES[saved.scale] ? saved.scale : 'standard'; }
+} catch (e) { /* start with defaults */ }
+
+const $ = s => document.querySelector(s);
+const semEl = $('#semesters');
+
+function gradeLabel(g){ return g[0] + ' (' + g[1] + ') ' + g[2]; }
+function save(){ try { localStorage.setItem('sp-cgpa-v1', JSON.stringify({scale, semesters})); } catch(e){} }
+
+function renderTable(){
+  $('#gradeTable').innerHTML = SCALES.standard.grades.map((g,i) =>
+    '<tr><td><span class="bar" style="width:26px;background:' + (BAR_COLORS[i]||'#94a3b8') + '"></span>' + g[0] + '</td><td>' + g[1] + '</td><td>' + g[2] + '</td><td></td></tr>').join('');
+}
+
+function render(){
+  const grades = SCALES[scale].grades;
+  $('#scaleName').textContent = SCALES[scale].name;
+  $('#scaleNote').textContent = SCALES[scale].note;
+  document.querySelectorAll('.scale-btn').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.scale === scale)));
+  let totalCredits = 0, totalPoints = 0;
+  semEl.innerHTML = '';
+  semesters.forEach((sem, si) => {
+    let semCredits = 0, semPoints = 0;
+    const sec = document.createElement('section');
+    sec.className = 'semester';
+    const head = document.createElement('header');
+    head.innerHTML = '<h2>Semester ' + (si+1) + '</h2><span class="gpa">Semester GPA: <span data-gpa></span></span>';
+    if (semesters.length > 1) {
+      const rm = document.createElement('button');
+      rm.type = 'button'; rm.className = 'remove-sem'; rm.textContent = 'Remove Semester \u00d7';
+      rm.setAttribute('aria-label', 'Remove Semester ' + (si+1));
+      rm.onclick = () => { semesters.splice(si,1); save(); render(); };
+      head.appendChild(rm);
+    }
+    sec.appendChild(head);
+    sem.courses.forEach((c, ci) => {
+      const g = grades[Math.min(c.grade, grades.length-1)] || grades[0];
+      const pts = parseFloat(g[1]); const cr = Number(c.credit) || 0;
+      semCredits += cr; semPoints += pts * cr;
+      const row = document.createElement('div'); row.className = 'course';
+      row.innerHTML =
+        '<div class="field f-name"><label>COURSE NAME (OPTIONAL)</label><input type="text" placeholder="e.g. CSE101 (Optional)" value="" aria-label="Course name"></div>' +
+        '<div class="field f-credit"><label>CREDIT</label><input type="number" min="0" max="6" step="0.5" value="' + cr + '" aria-label="Credit hours"></div>' +
+        '<div class="field f-grade"><label>GRADE</label><select aria-label="Grade"></select></div>' +
+        '<button type="button" class="remove-course" aria-label="Remove course">\u00d7</button>';
+      row.querySelector('input[type=text]').value = c.name || '';
+      row.querySelector('input[type=text]').oninput = e => { c.name = e.target.value; save(); };
+      row.querySelector('input[type=number]').oninput = e => { c.credit = parseFloat(e.target.value) || 0; save(); render(); };
+      const sel = row.querySelector('select');
+      grades.forEach((gg, gi) => { const o = document.createElement('option'); o.value = gi; o.textContent = gradeLabel(gg); sel.appendChild(o); });
+      sel.value = String(Math.min(c.grade, grades.length-1));
+      sel.onchange = e => { c.grade = parseInt(e.target.value, 10); save(); render(); };
+      row.querySelector('.remove-course').onclick = () => { if (sem.courses.length > 1) { sem.courses.splice(ci,1); save(); render(); } };
+      sec.appendChild(row);
+    });
+    const add = document.createElement('div'); add.className = 'add-course';
+    add.innerHTML = '<button type="button" class="btn btn-outline-dashed">+ Add Course</button>';
+    add.querySelector('button').onclick = () => { sem.courses.push({name:'',credit:3,grade:0}); save(); render(); };
+    sec.appendChild(add);
+    const gpa = semCredits ? semPoints / semCredits : 0;
+    head.querySelector('[data-gpa]').textContent = gpa.toFixed(2);
+    totalCredits += semCredits; totalPoints += semPoints;
+    semEl.appendChild(sec);
+  });
+  $('#totalCredits').textContent = (Math.round(totalCredits*10)/10).toFixed(1);
+  $('#finalCgpa').textContent = totalCredits ? (totalPoints/totalCredits).toFixed(2) : '0.00';
+  save();
+}
+
+$('#toggleScales').onclick = () => {
+  const p = $('#scalePicker'); const open = p.hidden;
+  p.hidden = !open; $('#toggleScales').setAttribute('aria-expanded', String(open));
+  $('#toggleScales').textContent = open ? 'Change grading system \u2193' : 'Change grading system \u2192';
+};
+document.querySelectorAll('.scale-btn').forEach(b => b.onclick = () => {
+  scale = b.dataset.scale;
+  semesters.forEach(s => s.courses.forEach(c => { c.grade = Math.min(c.grade, SCALES[scale].grades.length-1); }));
+  save(); render();
+});
+$('#addSemester').onclick = () => {
+  semesters.push({ courses: [{name:'',credit:3,grade:0},{name:'',credit:3,grade:0},{name:'',credit:3,grade:0}] });
+  save(); render();
+  semEl.lastElementChild.scrollIntoView({behavior:'smooth', block:'center'});
+};
+
+function renderTarget(){
+  const cur = parseFloat($('#tCurrent').value) || 0, done = parseFloat($('#tDone').value) || 0,
+        goal = parseFloat($('#tGoal').value) || 0, left = parseFloat($('#tLeft').value) || 0;
+  const el = $('#targetResult');
+  if (!left || !done) { el.textContent = ''; return; }
+  const req = (goal * (done + left) - cur * done) / left;
+  el.textContent = req > 4
+    ? 'Target not possible — you would need an average of ' + req.toFixed(2) + ' (maximum is 4.00).'
+    : 'You need an average grade point of ' + req.toFixed(2) + ' in your remaining ' + left + ' credits.';
+}
+['tCurrent','tDone','tGoal','tLeft'].forEach(id => document.getElementById(id).addEventListener('input', renderTarget));
+
+renderTable();
+render();
+renderTarget();
+</script>
+</body>
+</html>
